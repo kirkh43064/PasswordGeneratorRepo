@@ -7,17 +7,17 @@ const special = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"]
 const lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-var passwordLength;
-var confirmLower;
-var confirmUpper;
-var confirmNumber;
-var confirmSpecial;
-var userChoices;
+let passwordLength;
+let confirmLower;
+let confirmUpper;
+let confirmNumber;
+let confirmSpecial;
+let userChoices;
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  let password = generatePassword();
+  let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
@@ -37,7 +37,7 @@ function generatePassword() {
   }
 
   else if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("you must choose between 8 and 128";)
+    passwordLength = prompt("you must choose between 8 and 128");
   }
 
   else {
@@ -133,3 +133,18 @@ function generatePassword() {
 
 }
 
+// create variable for password length
+let passwordBlank = [];
+
+// run loop for each random item
+for (let i = 0; i < passwordLength; i++) {
+  let finalChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
+  passwordBlank.push(finalChoices);
+  console.log(finalChoices);
+}
+
+// combine and return password
+let password = passwordBlank.join("");
+console.log("our password is: " + password);
+
+document.getElementById("password").innerHTML = passwordBlank;
