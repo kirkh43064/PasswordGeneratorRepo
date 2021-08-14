@@ -10,5 +10,5 @@ This password generator application ask the user with prompts to enter the crite
 ![confimation box for numbers](\pics\confirmBox4.JPG "Confimation box for numbers")
 
 
-My Repo can be reached here
-the application can be reached here
+My Repo can be reached <a href= "https://github.com/kirkh43064/PasswordGeneratorRepo.git" target="_blank">here</a>
+the application can be reached <a href= "https://github.com/kirkh43064/PasswordGeneratorRepo.git/Develop/index.html" target="_blank">here</a>
