@@ -19,7 +19,7 @@ let randomPass = "";
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function writePassword() {
+function generatePassword() {
   let pwLength = prompt("Please enter the number of characters you want for you new password. It may be between 8 and 128 characters.");
   
   if (pwLength <= 7 || pwLength >= 129) {
@@ -52,6 +52,6 @@ function writePassword() {
     console.log(generate);
   }
 
-  document.getElementById("password").innerHTML = password;
+  //document.getElementById("password").innerHTML = password;
 return password;
 }
