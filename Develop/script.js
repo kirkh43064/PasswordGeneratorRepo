@@ -3,8 +3,9 @@ var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
   let password = generatePassword();
+  console.log(password);
   let passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  passwordText.textContent = password;
 }
 
 // create the arrays and variables
@@ -45,13 +46,15 @@ function generatePassword() {
     if (useNumb === true) {
     pwdArray = pwdArray.concat(number);
   }
-
+console.log(pwdArray);
+  password = ""
   for (let i = 0; i < pwLength; i++) {
-    let generate = pwdArray[Math.floor(Math.random() * (pwdArray.length))];
-    password += generate
-    console.log(generate);
+    let gen = pwdArray[Math.floor(Math.random() * (pwdArray.length))];
+    password += gen
+    console.log(password);
   }
 
-  //document.getElementById("password").innerHTML = password;
-return password;
+
+ return password;
+
 }
