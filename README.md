@@ -5,13 +5,13 @@
 
 ![user input box](\pics\prompt1.JPG "Input Box")<br />
 
-![confimation box for lowercase](\pics\confirmBox1.JPG "Confimation box for lowercase")<br />
+![confimation box for lowercase](pics\confirmBox1.JPG "Confimation box for lowercase")<br />
 
-![confimation box for uppercase](\pics\confirmBox2.JPG "Confimation box for uppercase")<br />
+![confimation box for uppercase](pics\confirmBox2.JPG "Confimation box for uppercase")<br />
 
-![confimation box for special characters](\pics\confirmBox3.JPG "Confimation box for special characters")<br />
+![confimation box for special characters](pics\confirmBox3.JPG "Confimation box for special characters")<br />
 
-![confimation box for numbers](\pics\confirmBox4.JPG "Confimation box for numbers")<br />
+![confimation box for numbers](pics\confirmBox4.JPG "Confimation box for numbers")<br />
 
 
 <p>My Repo can be reached <a href= "https://kirkh43064.github.io/PasswordGeneratorRepo/" target="_blank">here</a></p>
