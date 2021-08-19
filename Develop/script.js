@@ -23,6 +23,12 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   let pwLength = prompt("Please enter the number of characters you want for you new password. It may be between 8 and 128 characters.");
   
+  // sets all arrays to false
+  let useLower = false;
+  let useUpper = false;
+  let useSpecial = false;
+  let useNumb = false;
+
   if (pwLength <= 7 || pwLength >= 129) {
     return alert("Error: you must choose between 8 and 128")
   }
